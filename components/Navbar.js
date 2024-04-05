@@ -19,18 +19,18 @@ const Navbar = () => {
         </Link>
         <div className="hidden sm:flex">
           <ul className="hidden sm:flex">
-            <li className="ml-10 uppercase hover:border-b text-md text-textColor">
+            <li className="ml-10 uppercase font-medium hover:border-b text-md text-textColor">
               <Link href="/">Home</Link>
             </li>
-            <li className="ml-10 uppercase hover:border-b text-md text-textColor">
+            <li className="ml-10 uppercase font-medium hover:border-b text-md text-textColor">
               <Link href="/projects">Projects</Link>
             </li>
-            <li className="ml-10 uppercase hover:border-b text-md text-textColor">
+            <li className="ml-10 uppercase font-medium hover:border-b text-md text-textColor">
               <Link href="/blog">Blog</Link>
             </li>
-            <li className="ml-10 uppercase hover:border-b text-md text-textColor">
+            {/* <li className="ml-10 uppercase hover:border-b text-md text-textColor">
               <Link href="/contact">Contact</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div
@@ -78,14 +78,14 @@ const Navbar = () => {
                 Blog
               </li>
             </Link>
-            <Link href="/contact">
+            {/* <Link href="/contact">
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 cursor-pointer"
               >
                 Contact
               </li>
-            </Link>
+            </Link> */}
           </ul>
         </div>
       </div>

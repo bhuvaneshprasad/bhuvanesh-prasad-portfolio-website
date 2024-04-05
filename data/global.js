@@ -12,10 +12,10 @@
         title: "Blog",
         path: "/blog",
       },
-    {
-      title: "Contact",
-      path: "/contact",
-    },
+    // {
+    //   title: "Contact",
+    //   path: "/contact",
+    // },
   ];
   
   
@@ -39,11 +39,11 @@
             link: "/blog",
             leavesWebsite: false,
           },
-          {
-            name: "Contact",
-            link: "/contact",
-            leavesWebsite: false,
-          },
+          // {
+          //   name: "Contact",
+          //   link: "/contact",
+          //   leavesWebsite: false,
+          // },
         ],
       },
       {
