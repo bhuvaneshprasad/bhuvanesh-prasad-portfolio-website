@@ -43,7 +43,7 @@ const Navbar = () => {
       <div
         className={
           menuOpen
-            ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-bgcolorSoft text-textColorSoft text-xl font-bold text-center p-10 ease-in duration-500 flex-col"
+            ? "left-0 top-0 w-[65%] sm:hidden h-screen bg-bgcolorSoft text-textColorSoft text-xl font-bold text-center p-10 ease-in duration-500 flex-col absolute z-50"
             : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
         }
       >
@@ -54,30 +54,26 @@ const Navbar = () => {
         </div>
         <div className="py-4 flex flex-col justify-center">
           <ul>
-            <Link href="/">
-              <li
-                onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer"
-              >
-                Home
-              </li>
-            </Link>
-            <Link href="/projects">
-              <li
-                onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer"
-              >
-                Projects
-              </li>
-            </Link>
-            <Link href="/blog">
-              <li
-                onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer"
-              >
-                Blog
-              </li>
-            </Link>
+            <li
+              onClick={() => setMenuOpen(false)}
+              className="py-4 cursor-pointer"
+            >
+              <Link href="/">Home</Link>
+            </li>
+
+            <li
+              onClick={() => setMenuOpen(false)}
+              className="py-4 cursor-pointer"
+            >
+              <Link href="/projects">Projects</Link>
+            </li>
+
+            <li
+              onClick={() => setMenuOpen(false)}
+              className="py-4 cursor-pointer"
+            >
+              <Link href="/blog"> Blog</Link>
+            </li>
             {/* <Link href="/contact">
               <li
                 onClick={() => setMenuOpen(false)}

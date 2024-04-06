@@ -84,7 +84,6 @@
             name: "Gadget Pulse",
             link: "https://gadgetpulse.in",
             icon: "/gpo.svg",
-            style: { filter: "invert(1)" },
         },
         // {
         //     name: "FolioZ",

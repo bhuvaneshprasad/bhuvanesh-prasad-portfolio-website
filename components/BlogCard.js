@@ -9,11 +9,12 @@ function BlogCard({ blog }) {
     >
       <a
         href={"/blog/" + blog.node.slug}
-        className={`w-full rounded-xl border-fun-gray border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-fun-pink will-change-projectCard`}
+        className={`w-full rounded-xl border p-2 transition hover:-translate-y-2 hover:opacity-75`}
       >
         <img
           className="w-full rounded-md"
           src={blog.node.coverImage.url}
+          alt={blog.node.title}
         />
       </a>
       <div className="w-full mt-5">
@@ -22,7 +23,7 @@ function BlogCard({ blog }) {
             <h3 className="text-lg font-bold">{blog.node.title}</h3>
           </a>
         </div>
-        <p className="text-fun-gray text-left text-sm">{blog.desc}</p>
+        <p className="text-textColorSoft text-left text-sm">{blog.desc}</p>
         <ul className="flex flex-wrap items-center mt-2 -ml-2 list-none">
           {blog.node.tags.map((tag, index) => {
             return (

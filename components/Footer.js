@@ -10,9 +10,9 @@ function Footer() {
         {footer.columns.map((item, index) => {
           return (
             <div key={index} className="text-left mb-5 sm:mb-0">
-              <h4 className="uppercase text-textColorSoft text-sm font-bold">
+              <p className="uppercase text-textColorSoft text-sm font-bold">
                 {item.title}
-              </h4>
+              </p>
               <div>
                 {item.links.map((item, index) => {
                   return (
@@ -27,6 +27,7 @@ function Footer() {
                             <span className="pr-2">
                               <Image
                                 src={item.icon}
+                                alt={item.name + " icon"}
                                 width={20}
                                 height={20}
                                 style={item.style ? item.style : ""}
@@ -45,10 +46,10 @@ function Footer() {
             </div>
           );
         })}
-        <div className="text-center col-span-2 sm:col-auto sm:text-left pt-8 sm:mt-0 sm:pt-0 text-fun-gray border-t border-fun-pink-dark sm:border-0">
-          <h4 className="uppercase text-textColorSoft text-sm font-bold">
+        <div className="text-center col-span-2 sm:col-auto sm:text-left pt-8 sm:mt-0 sm:pt-0 border-t sm:border-0">
+          <p className="uppercase text-textColorSoft text-sm font-bold">
             My Other Websites
-          </h4>
+          </p>
           <div className="space-y-2 mt-4 w-full flex items-center sm:items-start flex-col">
             {footer.otherWebsites.map((item, index) => {
               return (
@@ -59,11 +60,12 @@ function Footer() {
                   className="items-center flex"
                 >
                   {item.icon && (
-                    <span className="pr-2">
+                    <span>
                       <Image
                         src={item.icon}
-                        width={20}
-                        height={20}
+                        alt={item.name + " icon"}
+                        width={50}
+                        height={50}
                         style={item.style ? item.style : ""}
                       />
                     </span>
@@ -76,7 +78,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t border-fun-pink-dark">
+      <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center border-t">
         <p className="flex flex-col items-center justify-center ">
           <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
             © Bhuvanesh Prasad, 2024. All rights reserved.

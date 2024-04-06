@@ -2,6 +2,16 @@ import React from "react";
 import fetchPosts from "../../helper/getPosts";
 import AllBlogs from "../../components/AllBlogs";
 
+export async function generateMetadata() {
+  return {
+    title: `Blogs`,
+    description:
+      "Blogs from Bhuvanesh Prasad",
+    keywords: ["Bhuvanesh Prasad Blogs", "Blogs", "Bhuvanesh Blogs", "Data Analyst Blogs", "Data Science Blogs", "Finance Blogs"],
+    applicationName: "Bhuvanesh Prasad",
+  };
+}
+
 const Blog = async ({ searchParams }) => {
   const pageSize = 9;
 

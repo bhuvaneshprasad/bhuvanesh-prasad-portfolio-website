@@ -3,6 +3,16 @@ import { getProjectsByTag } from "../../../data/content/projects";
 import ProjectCard from "../../../components/ProjectCard";
 import Link from "next/link";
 
+export async function generateMetadata({params}) {
+  return {
+    title: `${params.tag} Projects`,
+    description:
+      `${params.tag} projects done by Bhuvanesh Prasad`,
+    keywords: ["Bhuvanesh Prasad Projects", "Projects", "Bhuvanesh Projects", `${params.tag} projects`],
+    applicationName: "Bhuvanesh Prasad",
+  };
+}
+
 function TagProjects({ params }) {
   const projectsList = getProjectsByTag(params?.tag);
   return (

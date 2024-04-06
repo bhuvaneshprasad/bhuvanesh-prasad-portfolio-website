@@ -26,7 +26,7 @@ function ProjectHeading({ tag }) {
         </h1>
       )}
       {/* {!tag && (
-        <p className="text-fun-gray text-xl sm:text-2xl max-w-3xl m-auto text-textColorSoft">
+        <p className="text-xl sm:text-2xl max-w-3xl m-auto text-textColorSoft">
           I've built cool apps and websites using anything from HTML to React
           (and even PHP!). Here are some of my favorite projects over the course
           of my journey.

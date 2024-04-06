@@ -16,46 +16,55 @@ function Hero() {
           className="w-16 md:hidden lg:flex top-[15%] left-5 lg:left-[15%] lg:top-[25%] absolute"
           style={{ animationDelay: "0.25s" }}
           src="/chart.png"
+          alt="chart icon"
         />
         <img
           className="w-16 md:hidden lg:flex top-[25%] right-[25%] absolute"
           style={{ animationDelay: "0.25s" }}
           src="/mind-map.png"
+          alt="mind map icon"
         />
         <img
           className="w-16 md:hidden lg:flex top-[50%] right-[90%] lg:left-[18%] lg:top-[55%] xl:right-[70%] absolute"
           style={{ animationDelay: "0.25s" }}
           src="/matlab.svg"
+          alt="matlab icon"
         />
         <img
           className="w-16 md:hidden lg:flex top-[50%] left-[75%] lg:top-[55%] xl:top-[52%] xl:left-[69%] absolute"
           style={{ animationDelay: "0.25s" }}
           src="/bulb.svg"
+          alt="bulb icon"
         />
         <img
           className="w-26 hidden lg:flex top-[90%] right-[5%] bottom-[5%] absolute"
           style={{ animationDelay: "0.25s" }}
           src="/slice.png"
+          alt="slice chart icon"
         />
         <img
           className="w-24 hidden lg:flex top-[70%] left-[5%] bottom-[15%] absolute"
           style={{ animationDelay: "0.25s" }}
           src="/presentation.png"
+          alt="presentation icon"
         />
         <img
           className="w-16 -mt-1 md:left-[46%] lg:-mt-3 left-[40%] lg:left-[47%] absolute"
           style={{ animationDelay: "0.1s" }}
           src="/hard-working.png"
+          alt="hard-working icon"
         />
         <img
           className="w-32 -bottom-[7%] left-[50%] absolute"
           style={{ animationDelay: "0.1s" }}
           src="/doughnut-chart.png"
+          alt="doughnut chart icon"
         />
         <img
           className="w-16 hidden lg:flex top-[20%] left-[50%] absolute"
           style={{ animationDelay: "0.1s" }}
           src="/statistics.png"
+          alt="statistics icon"
         />
         </h1>
         

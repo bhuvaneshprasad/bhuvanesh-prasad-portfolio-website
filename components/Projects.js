@@ -10,7 +10,7 @@ function Projects() {
     <div className="flex flex-col text-left justify-between pt-8 relative text-textColor bg-bgcolor px-3 md:px-8 lg:px-16 lg:h-screen">
         <SectionTitle title="Latest projects" />
       <div className="grid grid-cols-1 gap-12 md:gap-5 md:grid-cols-3 items-start">
-        {projects.slice(0, 3).map((item) => {
+        {projects.sort((a, b) => b.id - a.id).slice(0, 3).map((item) => {
           return <ProjectCard key={item.id} project={item} />;
         })}
       </div>

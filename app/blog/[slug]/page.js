@@ -1,8 +1,55 @@
 import React from "react";
 import BlogHeader from "../../../components/BlogHeader";
-import BlogToc from "../../../components/BlogToc";
 import BlogContent from "../../../components/BlogContent";
 import getPostDetails from "../../../helper/getPostDetails";
+
+export async function generateMetadata({params}) {
+  const query = `
+    query GetPostDetails {
+        publication(host:"bhuvaneshprasad.hashnode.dev"){
+        post(slug:"${params.slug}"){
+          coverImage{
+            url
+          }
+          title
+          subtitle
+          readTimeInMinutes
+          author{
+            name
+            profilePicture
+          }
+          publishedAt
+          tags{
+            name
+          }
+          features{
+            tableOfContents{
+              isEnabled
+              items{
+                id
+                title
+                slug
+                parentId
+                level
+              }
+            }
+          }
+          content{
+            html
+          }
+        }
+      }
+      }`;
+
+  const post = await getPostDetails(query);
+  return {
+    title: `${post.title}`,
+    description:
+      `${post.subtitle}`,
+    keywords: [`${post.tags.map(tag=>tag.name)}`],
+    applicationName: "Bhuvanesh Prasad",
+  };
+}
 
 const BlogPage = async ({params}) => {
   const query = `
@@ -52,7 +99,6 @@ const BlogPage = async ({params}) => {
         authorImage={post.author.profilePicture}
         publishedAt={post.publishedAt}
       />
-      {/* <BlogToc toc={post.features.tableOfContents} /> */}
       <BlogContent content={post.content} />
     </>
   );

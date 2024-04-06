@@ -11,11 +11,12 @@ function ProjectCard({ project }) {
       <a
         href={project.link || project.github}
         target="_blank"
-        className={`w-full rounded-xl border-fun-gray border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-fun-pink will-change-projectCard`}
+        className={`w-full rounded-xl border p-2 transition hover:-translate-y-2 hover:opacity-75`}
       >
         <img
           className="w-full rounded-md"
           src={project.img}
+          alt={project.title + " cover image"}
         />
       </a>
       <div className="w-full mt-5">
@@ -48,7 +49,7 @@ function ProjectCard({ project }) {
             )}
           </div>
         </div>
-        <p className="text-fun-gray text-left text-sm">{project.desc}</p>
+        <p className="text-left text-textColorSoft text-sm">{project.desc}</p>
         <ul className="flex flex-wrap items-center mt-2 -ml-2 list-none">
           {project.tags.map((tag, index) => {
             return (

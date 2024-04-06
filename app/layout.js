@@ -8,7 +8,11 @@ import Footer from "../components/Footer"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Bhuvanesh Prasad",
+  title: {
+    default: "Bhuvanesh Prasad",
+    template: "%s | Bhuvanesh Prasad",
+    keywords: ["Bhuvanesh", "Bhuvanesh Prasad", "Bhuvi", "therealbhuvi", "bhuvaneshprasad", "Data Analyst", "Data Scientist", "Personal Finance", "Tech"],
+  },
   description: "Portfolio Website of Bhuvanesh Prasad",
 };
 
