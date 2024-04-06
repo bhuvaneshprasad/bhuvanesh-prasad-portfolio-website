@@ -8,6 +8,7 @@ import Footer from "../components/Footer"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
   title: {
     default: "Bhuvanesh Prasad",
     template: "%s | Bhuvanesh Prasad",
