@@ -4,6 +4,7 @@ import { ThemeContextProvider } from "../utils/ThemeContext";
 import ThemeProvider from "../utils/ThemeProvider";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer"
+import Adsense from "../components/Adsense"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Adsense/>
+      </head>
       <body className={inter.className}>
         <ThemeContextProvider>
           <ThemeProvider>
