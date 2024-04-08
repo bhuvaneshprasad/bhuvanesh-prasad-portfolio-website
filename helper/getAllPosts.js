@@ -11,6 +11,7 @@ export default async function getAllPosts(username) {
             posts(pageSize: 1, page: ${page}) {
               edges {
                 node {
+                  id
                   coverImage {
                     url
                   }
@@ -32,7 +33,7 @@ export default async function getAllPosts(username) {
     try {
       const response = await fetch("https://gql.hashnode.com/", {
         method: "POST",
-        next: {tags:["allPosts"]},
+        next: {tags:["allPosts", "all"]},
         headers: {
           "Content-Type": "application/json",
         },

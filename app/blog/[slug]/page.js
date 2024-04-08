@@ -8,6 +8,7 @@ export async function generateMetadata({params}) {
     query GetPostDetails {
         publication(host:"bhuvaneshprasad.hashnode.dev"){
         post(slug:"${params.slug}"){
+          id
           coverImage{
             url
           }
@@ -15,11 +16,13 @@ export async function generateMetadata({params}) {
           subtitle
           readTimeInMinutes
           author{
+            id
             name
             profilePicture
           }
           publishedAt
           tags{
+            id
             name
           }
           features{
@@ -56,6 +59,7 @@ const BlogPage = async ({params}) => {
     query GetPostDetails {
         publication(host:"bhuvaneshprasad.hashnode.dev"){
         post(slug:"${params.slug}"){
+          id
           coverImage{
             url
           }
@@ -63,6 +67,7 @@ const BlogPage = async ({params}) => {
           subtitle
           readTimeInMinutes
           author{
+            id
             name
             profilePicture
           }

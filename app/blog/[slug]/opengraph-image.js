@@ -14,17 +14,20 @@ export default async function og({params}) {
     query GetPostDetails {
         publication(host:"bhuvaneshprasad.hashnode.dev"){
         post(slug:"${params.slug}"){
+          id
           coverImage{
             url
           }
           title
           readTimeInMinutes
           author{
+            id
             name
             profilePicture
           }
           publishedAt
           tags{
+            id
             name
           }
         }

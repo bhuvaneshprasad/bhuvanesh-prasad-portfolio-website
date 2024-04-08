@@ -5,7 +5,7 @@ export default async function fetchPosts(query) {
   try {
     const response = await fetch('https://gql.hashnode.com/', {
       method: 'POST',
-      next: {tags:['posts']},
+      next: {tags:['posts', 'all']},
       headers: {
         'Content-Type': 'application/json',
       },

@@ -18,7 +18,7 @@ const Blog = async ({ searchParams }) => {
   const currentPage = 1;
 
   const getPosts = `
-    query Followers {
+    query GetPosts {
       user(username: "bhuvaneshprasad") {
         id
         posts(pageSize: ${pageSize}, page: ${

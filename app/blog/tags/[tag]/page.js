@@ -24,6 +24,7 @@ const BlogTag = async ({ params, searchParams }) => {
       posts(page:${searchParams.page || currentPage}, pageSize:${pageSize}, filter:{tagSlugs:["${(params.tag).toLowerCase()}"]}){
         edges{
           node{
+            id
             coverImage{
                 url
               }
