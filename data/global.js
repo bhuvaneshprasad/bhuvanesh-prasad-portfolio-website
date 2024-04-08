@@ -51,7 +51,7 @@
         links: [
           {
             name: "GitHub",
-            link: "https://github.com/bhuvaneshprasad.com",
+            link: "https://github.com/bhuvaneshprasad",
             icon: "/github.svg",
             leavesWebsite: true,
             style: { filter: "invert(1)" },
