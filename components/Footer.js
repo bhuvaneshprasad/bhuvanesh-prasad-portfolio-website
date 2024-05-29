@@ -46,7 +46,7 @@ function Footer() {
             </div>
           );
         })}
-        <div className="text-center col-span-2 sm:col-auto sm:text-left pt-8 sm:mt-0 sm:pt-0 border-t sm:border-0">
+        {/* <div className="text-center col-span-2 sm:col-auto sm:text-left pt-8 sm:mt-0 sm:pt-0 border-t sm:border-0">
           <p className="uppercase text-textColorSoft text-sm font-bold">
             My Other Websites
           </p>
@@ -76,7 +76,7 @@ function Footer() {
               );
             })}
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center border-t">
         <p className="flex flex-col items-center justify-center ">

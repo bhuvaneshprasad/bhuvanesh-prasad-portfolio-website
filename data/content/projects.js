@@ -25,6 +25,24 @@ const projects = [
     img: `${process.env.NEXT_PUBLIC_BASE_URL}/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1704908641555%2Fdf90f7bb-6c9c-4f22-b1c9-2a413fdfa0fc.png&w=1920&q=75`,
     link: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/end-to-end-ipl-data-analysis-with-python-and-power-bi`,
     tags: ["SQL", "PowerBI", "Python"],
+    
+  },
+  {
+    id: 3,
+    title: "Nifty 50 predictor using LSTM",
+    desc: "A Long Short-Term Memory(LSTM) model to predict Nifty 50 Index closing price for next trading session.",
+    img: `/projects/nifty_predictor.jpg`,
+    link: `https://huggingface.co/spaces/bhuvaneshprasad/nifty_predictor`,
+    github: "https://github.com/bhuvaneshprasad/nifty50_prediction_using_LSTM_and_keras",
+    tags: ["Python", "Time Series Data", "LSTM", "Machine Learning", "Neural Networks"],
+  },
+  {
+    id: 4,
+    title: "Enefit - Predict Energy Behavior of Prosumers",
+    desc: "ML model for predicting the energy behaviour of the prosumers. ",
+    img: `/projects/enefit_prediction.jpg`,
+    github: "https://github.com/bhuvaneshprasad/enefit_predict_energy_behaviour",
+    tags: ["Python", "Time Series Data", "Decision Tree", "Machine Learning", "Regression"],
   },
 ];
 
