@@ -8,10 +8,11 @@ function Hero() {
         className="w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center"
         style={{ maxWidth: "1200px" }}
       >
-        <p className="text-xl mb-5 font-bold">Hey, I'm Bhuvanesh.</p>
-        <h1 className="inline-block max-w-2xl lg:max-w-4xl w-auto text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold">
-          I leverage <span className="text-blueAccent">data</span> for impactful{" "}
-          <span className="text-blueAccent">decision-making</span>.
+        <p className="text-xl mb-5 font-bold">Hey, I'm Bhuvanesh. And I'm</p>
+        <h1 className="inline-block max-w-2xl lg:max-w-4xl w-auto text-4xl md:text-5xl lg:text-7xl tracking-tighter mb-10 font-bold">
+          {/* I leverage <span className="text-blueAccent">data</span> for impactful{" "}
+          <span className="text-blueAccent">decision-making</span>. */}
+          Transforming <span className="text-blueAccent">possibilities</span> into <span className="text-blueAccent">reality</span> with <span className="text-blueAccent">generative AI</span>.
         <img
           className="w-16 md:hidden lg:flex top-[15%] left-5 lg:left-[15%] lg:top-[25%] absolute"
           style={{ animationDelay: "0.25s" }}
@@ -31,7 +32,7 @@ function Hero() {
           alt="matlab icon"
         />
         <img
-          className="w-16 md:hidden lg:flex top-[50%] left-[75%] lg:top-[55%] xl:top-[52%] xl:left-[69%] absolute"
+          className="w-16 top-[57%] md:hidden lg:flex md:top-[50%] left-[75%] lg:top-[55%] xl:top-[52%] xl:left-[69%] absolute"
           style={{ animationDelay: "0.25s" }}
           src="/bulb.svg"
           alt="bulb icon"
@@ -76,7 +77,7 @@ function Hero() {
             </button>
           </Link>
           <Link
-            href="https://drive.google.com/file/d/1aMmjxP8LZIOYxDsUAKpEqUT3ZefiCTFQ/view"
+            href="https://drive.google.com/file/d/1uuyEIE_d_j4f9Nbq0t5iKf6_Ssgcu8zd/view"
             target="_blank"
           >
             <button className="bg-transparent hover:bg-blueAccent hover:border-blueAccent text-textColor font-bold py-2 px-4 rounded-full mt-4 border-textColor border-2">

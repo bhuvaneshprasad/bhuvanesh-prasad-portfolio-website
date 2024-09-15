@@ -20,7 +20,7 @@ export const skills = [
     icon: "tableau.svg",
   },
   {
-    title: "ML",
+    title: "AI, ML",
     icon: "machineLearning.svg",
   },
   {

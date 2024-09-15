@@ -22,6 +22,13 @@ const WorkExperience = [
     year: "Jan 2023 - Jul 2023",
     logo: "/cashrich.png"
   },
+  {
+    id: 3,
+    title: "Associate Sftware Engineer",
+    company: "Numero - Katalyst Labs",
+    year: "Sep 2024 - Present",
+    logo: "/Numero.png"
+  },
   
 ];
 

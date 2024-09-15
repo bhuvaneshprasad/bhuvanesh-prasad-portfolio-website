@@ -34,7 +34,7 @@ const projects = [
     img: `/projects/nifty_predictor.jpg`,
     link: `https://huggingface.co/spaces/bhuvaneshprasad/nifty_predictor`,
     github: "https://github.com/bhuvaneshprasad/nifty50_prediction_using_LSTM_and_keras",
-    tags: ["Python", "Time Series Data", "LSTM", "Machine Learning", "Neural Networks"],
+    tags: ["Python", "Time Series Data", "LSTM", "Deep Learning", "Neural Networks"],
   },
   {
     id: 4,
@@ -43,6 +43,32 @@ const projects = [
     img: `/projects/enefit_prediction.jpg`,
     github: "https://github.com/bhuvaneshprasad/enefit_predict_energy_behaviour",
     tags: ["Python", "Time Series Data", "Decision Tree", "Machine Learning", "Regression"],
+  },
+  {
+    id: 5,
+    title: "Classifying Extraterrestrial Signals with Deep Learning",
+    desc: "An End-to-End Deep Learning project for classifying SETI signals using Convolutional Neural Networks (CNNs), MLFlow and DVC.",
+    img: `/projects/seti-classifier.png`,
+    link: `https://huggingface.co/spaces/bhuvaneshprasad/seti-signals-classifier`,
+    github: "https://github.com/bhuvaneshprasad/End-to-End-SETI-Classification-using-CNN-MLFlow-DVC",
+    tags: ["Python", "Image Classification", "CNN", "Deep Learning", "Neural Networks"],
+  },
+  {
+    id: 6,
+    title: "TimeSeries Forecasting on Stock Market Data",
+    desc: "A timeseries forecasting project on stock market data using GRU.",
+    img: `/projects/nifty_predictor.jpg`,
+    link: `https://huggingface.co/spaces/bhuvaneshprasad/timeseries-forecasting`,
+    github: "https://github.com/bhuvaneshprasad/TimeSeries-Forecasting-on-Stock-Market-Data",
+    tags: ["Python", "Time Aeries Data", "GRU", "Deep Learning", "Neural Networks"],
+  },
+  {
+    id: 7,
+    title: "Instance Image Segmentation Using U-Net Architecture",
+    desc: "An instance image segmentation deep learning project using U-NET architecture.",
+    img: `/projects/instance-image-segmentation.png`,
+    github: "https://github.com/bhuvaneshprasad/Instance-Image_segmentation-using-unet-architecture",
+    tags: ["Python", "Image Segmentation", "UNET", "Deep Learning", "Neural Networks"],
   },
 ];
 
