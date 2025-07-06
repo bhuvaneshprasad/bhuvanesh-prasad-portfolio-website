@@ -77,7 +77,7 @@ function Hero() {
             </button>
           </Link>
           <Link
-            href="https://drive.google.com/file/d/1uuyEIE_d_j4f9Nbq0t5iKf6_Ssgcu8zd/view"
+            href="https://drive.google.com/file/d/1rMKQOyA8N4Gb5I_jyiJu-71zlTtqLW9W/view"
             target="_blank"
           >
             <button className="bg-transparent hover:bg-blueAccent hover:border-blueAccent text-textColor font-bold py-2 px-4 rounded-full mt-4 border-textColor border-2">
