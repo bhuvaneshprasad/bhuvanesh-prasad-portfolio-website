@@ -24,7 +24,7 @@ const WorkExperience = [
   },
   {
     id: 3,
-    title: "Associate Sftware Engineer",
+    title: "Associate Software Engineer",
     company: "Numero - Katalyst Labs",
     year: "Sep 2024 - Present",
     logo: "/Numero.png"
